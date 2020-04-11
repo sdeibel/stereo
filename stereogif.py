@@ -7,7 +7,7 @@
 import os
 import imageio
 
-dirname = '/Users/sdeibel/Desktop/garden-stereo-experiment'
+dirname = 'samples'
 filenames = [
   'DSCN4663.jpg',
   'DSCN4664.jpg',
@@ -18,4 +18,4 @@ for filename in filenames:
   filename = os.path.join(dirname, filename)
   images.append(imageio.imread(filename))
 
-imageio.mimsave('/Users/sdeibel/Desktop/movie5.gif', images, duration=0.10)
+imageio.mimsave('samples/test.gif', images, duration=0.10)

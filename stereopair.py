@@ -6,7 +6,7 @@ import os
 from PIL import Image
 
 # Configuration
-dirname = '/Users/sdeibel/Desktop/garden-stereo-experiment'
+dirname = 'samples'
 suffix = '.JPG'
 result_dir = os.path.join(dirname, 'stereo')
 kSpacing = 20
