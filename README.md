@@ -8,3 +8,7 @@ https://shop.londonstereo.com/OWL-B-ENV.html
 
 Their book A Village Lost and Found, a collection of stereo photos from the 1850's,
 was the inspiration for this project.
+
+There is some information on how to manually take the stereo images here:
+
+https://www.londonstereo.com/stereophotography2.html
