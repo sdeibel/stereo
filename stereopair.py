@@ -2,12 +2,15 @@
 # for each pair that contains two images, left and right, for use with a stereo viewer
 # such as this one:  https://shop.londonstereo.com/OWL-B-ENV.html
 
-import os
+import os, sys
 from PIL import Image
 
 # Configuration
-dirname = 'samples'
-suffix = '.JPG'
+if len(sys.argv) > 1:
+  dirname = sys.argv[1]
+else:
+  dirname = 'samples'
+suffixes = ('.JPG', '.jpg')
 result_dir = os.path.join(dirname, 'stereo')
 kSpacing = 20
 kTargetSize = 600
@@ -16,7 +19,7 @@ if not os.path.exists(result_dir):
   os.mkdir(result_dir)  
 
 # Create list of image pairs; assumes they are in order by name
-files = [fn for fn in os.listdir(dirname) if fn.endswith(suffix)]
+files = [fn for fn in os.listdir(dirname) if fn.endswith(suffixes)]
 files.sort()
 pairs = []
 curr_pair = []
